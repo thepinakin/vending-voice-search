@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.5;
+    /*background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 20px 0;
+  color: #000;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.start-button {
+  padding: 10px;
+  overflow: -webkit-paged-x;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+.start-button .start {
+  background: #ffffff;
+  border-radius: 50%;
+  border: 0;
+  display: block;
+  height: 100px;
+  padding: 10px;
+  margin: 0 auto;
+  outline: none;
+  text-align: center;
+  transition: background .3s ease;
+  width: 100px;
+  box-shadow: 0px 7px 27px rgba(0,0,0,.3)
+}
+.start-button .start i {
+  color: #515151;
+  font-size: 30px;
+  transition: transform .3s ease;
+  transform: scale(1);
+}
+.start-button .start:hover {
+  background: #dbdbd0;
+  cursor: pointer;
+}
+.start-button .start:hover i {
+  transform: scale(1.1);
+}
+.start-button .start.active {
+  background: #212121;
+  animation: active-glow 1.5s infinite;
+}
+.start-button .start.active i {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+.start-button span {
+  display: block;
+  transition: opacity .5s ease;
+}
+.start-button .listening {
+  content: "listening";
+}
+.start-button span.active {
+  opacity: 1;
+}
+
+.output {
+  padding: 15px 0;
+  text-align: center;
+}
+.output span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.buttons {
+  overflow: visible;
+}
+
+.button {
+  float: left;
+  text-align: center;
+  padding: 5px;
+  width: 20%;
+}
+.button .button-inner {
+  background: #ffffff;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 30px;
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,.3);
+}
+.button .button-inner img{
+  width: 70%;
+}
+
+.button-inner.active {
+  background:#BDBDBD;
+  color: active;
+  animation: active-glow 1.5s infinite;
+}
+
+.controls {
+  text-align: center;
+}
+.controls a {
+  background: red;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+@-webkit-keyframes active-glow {
+  0% {
+    box-shadow: 0 0 10px 0 #E66B00;
+  }
+  50% {
+    box-shadow: 0 0 20px 0 #E66B00;
+  }
+  100% {
+    box-shadow: 0 0 10px 0 #E66B00;
+  }
+}
