@@ -1,6 +1,6 @@
 # vending-voice-search
 
-# vending product search
+# Vending product search
 **Voice operated Vending machine**
 
 **Voice search function**
