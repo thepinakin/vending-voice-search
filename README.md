@@ -11,7 +11,7 @@
 
 **Single page application**
 
-<img width="1223" alt="v-1" src="https://user-images.githubusercontent.com/33729320/129274402-658ec14e-4ede-4f07-ad8b-ee7842b17834.png">
+<img width="1368" alt="f-3" src="https://user-images.githubusercontent.com/33729320/129275484-753363f6-1ea4-47f6-999d-9cf10687d5a2.png">
 
 
 **Demo Link**
